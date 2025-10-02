@@ -1,0 +1,46 @@
+:host {
+    display: block;
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+  }
+  
+  li:hover {
+    background-color: #f5f5f5;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 0.75rem;
+  }
+  
+  span {
+    flex-grow: 1;
+    font-size: 1rem;
+    color: #111;
+  }
+  
+  span.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
