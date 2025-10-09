@@ -12,7 +12,7 @@ import { TaskService } from './task.service';
   <h1>🗂️ Task Manager</h1>
   <app-task-form></app-task-form>
   <app-task-list></app-task-list>
-  <p>Total Tasks: {{ taskService.getTasks().length }}</p>
+  
 `,
 })
 export class AppComponent {
