@@ -1,1 +1,12 @@
-<p>Total Tasks: {{ taskService.getTasks().length }}</p>
+<div class="container">
+  <h1>🗂️ Task Manager</h1>
+
+  <!-- Task Input Form -->
+  <app-task-form></app-task-form>
+
+  <!-- Filter Buttons -->
+  <app-task-filter></app-task-filter>
+
+  <!-- Task List -->
+  <app-task-list></app-task-list>
+</div>

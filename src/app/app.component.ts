@@ -1,20 +1,24 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
+import { TaskService } from './task.service';
 import { TaskFormComponent } from './task-form/task-form.component';
 import { TaskListComponent } from './task-list/task-list.component';
-import { TaskService } from './task.service';
+import { TaskFilterComponent } from './task-filter/task-filter.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, TaskFormComponent, TaskListComponent],
-  template: `
-  <h1>🗂️ Task Manager</h1>
-  <app-task-form></app-task-form>
-  <app-task-list></app-task-list>
-  <p>Total Tasks: {{ taskService.getTasks().length }}</p>
-`,
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    TaskFormComponent,
+    TaskListComponent,
+    TaskFilterComponent
+  ],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-constructor(public taskService: TaskService) {}
+  constructor(public taskService: TaskService) {}
 }

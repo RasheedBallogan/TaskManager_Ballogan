@@ -17,7 +17,7 @@ export class TaskFormComponent {
 
   addTask() {
     if (this.newTask.trim()) {
-      this.taskService.addTask({ name: this.newTask, completed: false });
+      this.taskService.addTask(this.newTask);
       this.newTask = '';
     }
   }

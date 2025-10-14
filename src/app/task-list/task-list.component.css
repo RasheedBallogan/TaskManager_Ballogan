@@ -44,3 +44,41 @@
     color: #888;
   }
   
+  .task-summary {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+
+  button {
+    margin-left: 1rem;
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .task-summary {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  button {
+    margin-left: 1rem;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+  }
+  
+  
+  

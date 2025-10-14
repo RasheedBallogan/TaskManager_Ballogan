@@ -1,0 +1,9 @@
+.filter-buttons {
+  display: flex;
+  justify-content: center; /* ✅ centers the buttons horizontally */
+  align-items: center;
+  gap: 12px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+}
