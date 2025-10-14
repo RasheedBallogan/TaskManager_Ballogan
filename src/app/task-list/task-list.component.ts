@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TaskService, Task } from '../task.service';
+
 import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-task-list',
@@ -11,7 +13,9 @@ import { Observable } from 'rxjs';
   templateUrl: './task-list.component.html',
   styleUrls: ['./task-list.component.css']
 })
+
 export class TaskListComponent implements OnInit {
+
   newTaskName: string = '';
   editingTaskId: number | null = null;
   editedName: string = '';
@@ -64,4 +68,6 @@ export class TaskListComponent implements OnInit {
   get remainingCount(): number {
     return this.taskService['tasks'].filter(t => !t.completed).length;
   }
+
 }
+
