@@ -8,11 +8,17 @@ export interface Task {
   createdAt: Date;
 }
 
+export interface Task {
+  name: string;
+  completed: boolean;
+}
+
 @Injectable({
   providedIn: 'root'
 })
 export class TaskService {
   private tasks: Task[] = [];
+<<<<<<< HEAD
   private taskIdCounter = 1;
 
   private currentFilter: 'all' | 'active' | 'completed' = 'all';
@@ -66,5 +72,30 @@ export class TaskService {
       filtered = this.tasks.filter(t => t.completed);
     }
     this.filteredTasksSubject.next(filtered);
+=======
+
+  addTask(task: Task) {
+    this.tasks.push(task);
+  }
+
+  getTasks(): Task[] {
+    return this.tasks;
+  }
+
+  getActiveTasks(): Task[] {
+    return this.tasks.filter(task => !task.completed);
+  }
+
+  getCompletedCount(): number {
+    return this.tasks.filter(t => t.completed).length;
+  }
+
+  deleteTask(taskToDelete: Task): void {
+    this.tasks = this.tasks.filter(task => task !== taskToDelete);
+  }
+
+  toggleTaskCompletion(task: Task): void {
+    task.completed = !task.completed;
+>>>>>>> 4e5349e21f3fbfb7c43dcaa6dc0bea4a972befbe
   }
 }
