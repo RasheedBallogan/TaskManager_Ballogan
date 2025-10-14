@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 /* Reset and base styles */
 * {
   box-sizing: border-box;
@@ -63,6 +61,7 @@ h1 {
   background-color: #555;
 }
 
+/* Filter Buttons */
 .filter-buttons {
   display: flex;
   justify-content: center;
@@ -89,14 +88,11 @@ h1 {
 }
 
 .filter-buttons button.active {
-  background-color: #333;       /* Dark background */
-  color: #fff;                  /* White text */
+  background-color: #333;
+  color: #fff;
   border-color: #333;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
-
-
-
 
 /* Task List */
 ul {
@@ -160,5 +156,3 @@ li button:hover {
 .task-summary p {
   margin: 6px 0;
 }
-=======
->>>>>>> 4e5349e21f3fbfb7c43dcaa6dc0bea4a972befbe

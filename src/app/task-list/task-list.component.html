@@ -1,9 +1,5 @@
 <ul>
-<<<<<<< HEAD
   <li *ngFor="let task of tasks$ | async">
-=======
-  <li *ngFor="let task of tasks">
->>>>>>> 4e5349e21f3fbfb7c43dcaa6dc0bea4a972befbe
     <input type="checkbox" [checked]="task.completed" (change)="toggleTask(task)" />
     <span [style.textDecoration]="task.completed ? 'line-through' : 'none'">
       {{ task.name }}
@@ -12,16 +8,8 @@
   </li>
 </ul>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 4e5349e21f3fbfb7c43dcaa6dc0bea4a972befbe
 <div class="task-summary">
   <p>Total Tasks: {{ totalCount }}</p>
   <p>Completed Tasks: {{ completedCount }}</p>
   <p>Remaining Tasks: {{ remainingCount }}</p>
 </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 4e5349e21f3fbfb7c43dcaa6dc0bea4a972befbe
